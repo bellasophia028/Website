@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ <html lang="en">    
+ <head>   
+<meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Balangcas Industrial Corporation - LPG Delivery</title>  
+  <link rel="icon" type="image/png" href="images/favicon.png">  
+  <style>    
+    body {            font-family: Arial, sans-serif;            text-align: center;            margin: 0;            padding: 0;            background: linear-gradient(270deg, #ffd580, #FF8c00);            background-size: 400% 400%;            animation: gradientAnimation 10s ease infinite;            color: white;        }    
+    @keyframes gradientAnimation {            0% { background-position: 0% 50%; }            50% { background-position: 100% 50%; }            100% { background-position: 0% 50%; }        }        header {            background: #FF0000;            color: white;            padding: 20px;            font-size: 24px;        }        nav {            background: #002147;            padding: 10px;        }        nav a {            color: white;            text-decoration: none;            padding: 10px 20px;            display: inline-block;        }        nav a:hover {            background: #FF0000;        }        .services, .tank-options {            display: flex;            justify-content: center;            gap: 20px;            flex-wrap: wrap;            margin: 20px;        }        .service-box, .tank-box {            background: white;            padding: 15px;            border-radius: 5px;            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);            width: 30%;            min-width: 250px;            color: black;            text-align: center;        }        .service-box img, .tank-box img {            width: 150px;            height: auto;            margin-bottom: 10px;        }        .price-display {            font-size: 20px;            margin-top: 15px;            font-weight: bold;            color: yellow;        }        button {            background: #FF0000;            color: white;            padding: 15px;            border: none;            cursor: pointer;            font-size: 18px;            margin-top: 10px;            border-radius: 5px;        }        button:hover {            background: #cc0000;        }   </style> </head>
+
+<body>   
+
+ <!-- Main Page Content -->   
+ <div id="main-page">       
+ <header>Balangcas Industrial Corporation - LPG Delivery</header>
+
+  <!-- Navigation -->     
+   <nav>       
+     <a href="#home">Home</a>           
+ <a href="#services">Our Services</a>       
+ <a href="#contact">Contact Us</a>        
+ <a href="#faqs">FAQs</a>
+<a href="#" onclick="showOrderPage()">Order Now</a>        
+</nav>        
+
+<!-- Home Section -->        
+<section id="home">            
+<h2 style="color:black;font-family:Palatino,serif;">Reliable Cooking Gas Delivery to Your Home or Business!</h2>           
+ <h4 style="color:black;font-family:Palatino,serif;">We supply high-quality LPG (Liquefied Petroleum Gas) for residential and commercial use.</h4> 
+          
+ <button onclick="showOrderPage()">Order Now</button>        
+</section>        
+
+<!-- Services Section -->        
+<section id="services">            
+<h3 style="color:black;font-family:Palatino;">Our Services</h3>            
+<div class="services">                
+<div class="service-box">                    
+<h4>Home LPG Delivery</h4>                    
+<img src="https://tse4.mm.bing.net/th?id=OIP.IkumQeeA7dmoLt0Pmod-ZgHaHc&pid=Api" alt="11 kg LPG Tank">                    
+<p>Fast and safe LPG cylinder delivery for home cooking needs.</p>                    
+<button onclick="showOrderPage()">Order Now</button>                
+</div>               
+
+ <div class="service-box">                    
+<h4>Restaurant & Business Supply</h4>                    
+<img src="https://tse2.mm.bing.net/th?id=OIP.IvnJgq9vXdDFJ7m4VUjBQAHaHa&pid=Api" alt="22 kg LPG Tank">                    
+<p>Reliable bulk LPG supply for restaurants and commercial kitchens.</p>                    
+<button onclick="showOrderPage()">Order Now</button>                
+</div>                
+
+<div class="service-box">                    
+<h4>Industrial LPG Supply</h4>                    
+<img src="https://tse2.mm.bing.net/th?id=OIP.85WtStFLJkVy589CleU-SQHaHa&pid=Api" alt="50 kg LPG Tank">                    
+<p>Large-scale LPG delivery for industrial and manufacturing use.</p>                    
+<button onclick="showOrderPage()">Order Now</button>                
+</div>            
+</section>   
+
+  <!-- FAQs Section -->
+        <section id="faqs">
+            <h3 style="color:black;font-family:Palatino,serif;">Frequently Asked Questions</h3>
+            <p style="color:black;font-family:Palatino;">How fast is the delivery?</p>
+            <p style="color:black;font-family:Palatino;">- Usually within the same day.</p>
+            <p style="color:black;font-family:Palatino;">Do you accept bulk orders?</p>
+            <p style="color:black;font-family:Palatino;">- Yes, contact us for pricing.</p>
+        </section>
+
+ <!-- Contact Section -->        
+<section id="contact">          
+
+<h3 style="color:black;">📞 Contact Us: +63458781183</h3>
+
+<h4 style="color:black;">📍 Address: MacArthur Highway, Santo Tomas, Pampanga</h4> 
+
+       
+       
+       <footer style="background: #002147; color: white; text-align: center; position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2020 Balangcas Industrial Corporation. All Rights Reserved.</p>
+</footer>
+
+</section>    
+</div>    
+
+<!-- LPG Order Page (Hidden by Default) -->    
+<div id="order-page" style="display: none;">        
+<header>Select Your LPG Cylinder Size</header>        
+<div class="tank-options">            
+<div class="tank-box">                
+<img src="https://tse4.mm.bing.net/th?id=OIP.IkumQeeA7dmoLt0Pmod-ZgHaHc&pid=Api" alt="11 kg LPG Tank">                
+<h4>11 kg LPG Tank</h4>                
+<p>Ideal for home cooking. Lasts approximately 1 month for a small household.</p>                
+<button onclick="confirmOrder('11 kg LPG Tank', 850)">Select</button>            
+</div>           
+
+ <div class="tank-box">                
+<img src="https://tse2.mm.bing.net/th?id=OIP.IvnJgq9vXdDFJ7m4VUjBQAHaHa&pid=Api" alt="22 kg LPG Tank">                
+<h4>22 kg LPG Tank</h4>                
+<p>Perfect for restaurants or large households. Extended usage capacity.</p>                
+<button onclick="confirmOrder('22 kg LPG Tank', 1600)">Select</button>            
+</div>            
+
+<div class="tank-box">                
+<img src="https://tse2.mm.bing.net/th?id=OIP.85WtStFLJkVy589CleU-SQHaHa&pid=Api" alt="50 kg LPG Tank">                
+<h4>50 kg LPG Tank</h4>                
+<p>Best for industrial kitchens, catering services, and commercial businesses.</p>                
+<button onclick="confirmOrder('50 kg LPG Tank', 3500)">Select</button>            
+</div>        
+       
+
+ <!-- Price and Proceed Button -->        
+<div id="price-section" style="display: none;">            
+<p class="price-display" id="price-display"></p>            
+<button onclick="proceedOrder()">Proceed</button>        
+</div>       
+ <button onclick="goBack()">Back</button>   
+
+ <!-- JavaScript for Switching Pages -->    
+<script>        function showOrderPage() {            document.getElementById("main-page").style.display = "none";            document.getElementById("order-page").style.display = "block";        }        function confirmOrder(size, price) {            document.getElementById("price-display").innerText = "Price: ₱" + price;            document.getElementById("price-section").style.display = "block";        }        function proceedOrder() {            alert("Your order is being processed. Thank you for choosing our service!");        }        function goBack() {            document.getElementById("main-page").style.display = "block";            document.getElementById("order-page").style.display = "none";            document.getElementById("price-section").style.display = "none";        }    
+</script>
+
+</body>
+</html>
